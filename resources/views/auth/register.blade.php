@@ -1,7 +1,7 @@
 <x-guest-layout>
 
     <!-- Login with Google -->
-    <x-social-login-button href="{{ route('auth.google') }}">
+    <x-social-login-button href="{{ route('auth.google') }}" class="w-full h-[41.6px] px-4 py-2 mt-1">
         <i class="text-xl me-2 fa-brands fa-google"></i>
         {{ __('Google') }}
     </x-social-login-button>
