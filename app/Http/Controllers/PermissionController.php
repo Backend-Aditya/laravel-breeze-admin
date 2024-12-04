@@ -33,7 +33,7 @@ class PermissionController extends Controller
     {
         $validated = $request->validated();
         $permission = Permission::create(['name' => $validated['name']]);
-        return redirect()->route('permissions.index')->with('success', 'Permission created Successfully!');
+        return redirect()->route('permissions.index')->with('success', 'Permission created successfully!');
     }
 
     /**
@@ -62,7 +62,7 @@ class PermissionController extends Controller
         $validated = $request->validated();
         $permission = Permission::findOrFail($id);
         $permission->update(['name' => $validated['name']]);
-        return redirect()->route('permissions.index')->with('success', 'Permission updated Successfully!');
+        return redirect()->route('permissions.index')->with('success', 'Permission updated successfully!');
     }
 
     /**

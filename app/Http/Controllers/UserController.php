@@ -36,7 +36,7 @@ class UserController extends Controller
         $validated = $request->validated();
         $user = User::create($validated);
         $user->assignRole($request->input('roles'));
-        return redirect()->route('users.index')->with('success', 'User created Successfully!');
+        return redirect()->route('users.index')->with('success', 'User created successfully!');
     }
 
     /**
