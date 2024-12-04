@@ -3,11 +3,10 @@
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <!-- Login with Google -->
-    <a href="{{ route('auth.google') }}"
-        class="inline-flex items-center justify-center w-full px-4 py-2 mt-4 text-xs font-semibold tracking-widest text-gray-700 uppercase transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md shadow-sm dark:bg-gray-800 dark:border-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 disabled:opacity-25">
+    <x-social-login-button href="{{ route('auth.google') }}">
         <i class="text-xl me-2 fa-brands fa-google"></i>
         {{ __('Google') }}
-    </a>
+    </x-social-login-button>
 
     <!-- Saperator -->
     <div class="flex items-center mt-4 mb-2">
